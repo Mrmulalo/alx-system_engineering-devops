@@ -1,3 +1,2 @@
 #!/bin/bash
 ls -al | cat -n | sed -e '1s/^/.\n/' | cat -n | sed -e '1s/^/..\n/' | cat -n | sed -e '1s/^/\/boot\n/' | xargs -d '\n' sh -c 'cd $0 && ls -al'
-
